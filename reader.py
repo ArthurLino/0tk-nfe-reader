@@ -2,9 +2,8 @@ import xml.etree.ElementTree as et
 from itertools import groupby
 import os
 
-PATH = "./ad4-itupeva"
+PATH = ""
 PATTERN = "{http://www.portalfiscal.inf.br/nfe}"
-'''FILES = ["1305.xml", "1313.xml", "1338.xml", "1357.xml", "1378.xml", "1386.xml"]'''
 FILES = [d for d in os.listdir(PATH)]
 
 global_results = {}
