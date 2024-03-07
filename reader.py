@@ -2,8 +2,8 @@ import xml.etree.ElementTree as et
 from itertools import groupby
 import os
 
-PATH = "./ad3-louveira"
-PATTERN = "{http://www.portalfiscal.inf.br/nfe}"
+PATH = ""
+PATTERN = ""
 FILES = [d for d in os.listdir(PATH)]
 
 global_results = {}
@@ -14,7 +14,7 @@ for f in FILES:
     file = et.parse(f'{PATH}/{f}')
     root = file.getroot()
 
-    for child in root.findall(f"""./{PATTERN}NFe/{PATTERN}infNFe/{PATTERN}det/{PATTERN}prod"""):
+    for child in root.findall(f""):
         """loop through every product"""
 
         product = {
